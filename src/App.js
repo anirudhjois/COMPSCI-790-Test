@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 
 function App() {
-  const title = 'Welcome to the new blog';
+  const title = 'Welcome to NetRoom';
   const likes = 50;
   const link = 'http://www.google.com';
 
@@ -17,10 +17,10 @@ function App() {
 
         {/* <p>{ person }</p> */}
 
-        <p>{ 10 }</p>
+        {/* <p>{ 10 }</p>
         <p>{ "hello, ninjas" }</p>
         <p>{ [1,2,3,4,5] }</p>
-        <p>{ Math.random() * 10 }</p>
+        <p>{ Math.random() * 10 }</p> */}
 
         <a href={link}>Google Site</a>
       </div>
