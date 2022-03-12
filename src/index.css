@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Noto Sans";
   color: #333;
 }
 .navbar {
@@ -15,7 +16,8 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  /* color: #f1356d; */
+  color: #544ca1;
 }
 .navbar .links {
   margin-left: auto;
@@ -45,6 +47,6 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #544ca1;
   margin-bottom: 8px;
 }
