@@ -1,6 +1,9 @@
 .post {
   width: 385px;
   margin: 0px 25px 40px 25px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
 }
 
 .postImg {

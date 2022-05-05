@@ -12,14 +12,16 @@
   
   .topLeft,
   .topRight {
-    flex: 3;
+    /* flex: 10; */
+    padding-left: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .topCenter {
-    flex: 6;
+    /* flex: 1; */
+    padding-left: 40px;
   }
   
   .topIcon {
