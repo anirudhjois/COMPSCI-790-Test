@@ -31,7 +31,7 @@ export default function Settings() {
       updatedUser.profilePic = filename;
       try {
         await axios.post("/upload", data);
-      } catch (err) {}
+      } catch (err) { }
     }
     try {
       const res = await axios.put("/users/" + user._id, updatedUser);
@@ -46,18 +46,18 @@ export default function Settings() {
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsUpdateTitle">Update Your Account</span>
-          <span className="settingsDeleteTitle">Delete Account</span>
+          {/* <span className="settingsDeleteTitle">Delete Account</span> */}
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
-          <label>Profile Picture</label>
+          {/* <label>Profile Picture</label> */}
           <div className="settingsPP">
-            <img
+            {/* <img
               src={file ? URL.createObjectURL(file) : PF+user.profilePic}
               alt=""
-            />
-            <label htmlFor="fileInput">
+            /> */}
+            {/* <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
-            </label>
+            </label> */}
             <input
               type="file"
               id="fileInput"
@@ -89,12 +89,12 @@ export default function Settings() {
             <span
               style={{ color: "green", textAlign: "center", marginTop: "20px" }}
             >
-              Profile has been updated...
+              Your profile has been updated!
             </span>
           )}
         </form>
       </div>
-      <Sidebar />
+      {/* <Sidebar /> */}
     </div>
   );
 }

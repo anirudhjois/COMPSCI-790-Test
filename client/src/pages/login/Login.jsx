@@ -3,6 +3,7 @@ import { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./login.css";
+import Swal from "sweetalert2";
 
 export default function Login() {
   const userRef = useRef();
@@ -20,6 +21,13 @@ export default function Login() {
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
+      Swal.fire({
+        title: "Incorrect credentials!",
+        html: "Please try again after sometime, thank you.",
+        icon: "error",
+        width: "30em",
+        allowOutsideClick: false,
+      });
     }
   };
 

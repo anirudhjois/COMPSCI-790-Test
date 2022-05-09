@@ -25,11 +25,11 @@ export default function TopBar() {
               HOME
             </Link>
           </li>
-          <li className="topListItem">
+          {/* <li className="topListItem">
             <Link className="link" to="/">
               ABOUT
             </Link>
-          </li>
+          </li> */}
           {/* <li className="topListItem">
             <Link className="link" to="/">
               CONTACT
@@ -47,8 +47,10 @@ export default function TopBar() {
       </div>
       <div className="topRight">
         {user ? (
-          <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+          <Link to="/settings" style={{ paddingLeft: 220, marginLeft: 100, paddingTop: 20 }}>
+            {/* <img className="topImg" alt="" /> */}
+            <i className="fa fa-cog fa-2x" aria-hidden="true"></i>
+            {/* <img className="topImg" alt="" /> */}
           </Link>
         ) : (
           <ul className="topList">
