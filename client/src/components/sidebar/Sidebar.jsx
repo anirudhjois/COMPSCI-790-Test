@@ -22,8 +22,7 @@ export default function Sidebar() {
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+        "Live the Life of Your Dreams. Be brave enough to live the life of your dreams according to your vision and purpose instead of the expectations and opinions of others.”― Roy T. Bennett, The Light in the Heart
         </p>
       </div>
       <div className="sidebarItem">
